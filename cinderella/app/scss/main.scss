@@ -13,7 +13,7 @@ body {
   background-image: url('../img/dest/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   padding-bottom: 350px;
 }
 
@@ -47,61 +47,15 @@ a {
 	border-radius: 50%;
 }
 
-header {
-  padding: 10px 0;
-  background-color: rgba($color: #182272, $alpha: 0.5);
-
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .companyLogo {
-        width: 140px;
-    }
-
-    ul {
-        li {
-            a {
-                font-family: 'Acme';
-                color: #ffffff;
-                text-transform: uppercase;
-                font-weight: 500;
-                text-decoration: none;
-              
-                margin-right: 30px;
-              
-                &:hover {
-                  color: #4af931;
-                  cursor: pointer;
-                }
-            }
-        }
-    }
-
-    &.horizontalMenu {
-        height: 60px;
-
-        .companyLogo {
-            width: 200px;
-        }
-
-        ul {
-            li {
-                a {
-                    font-size: 24px;
-                }
-            }
-        }
-    }
-  }
-}
-
 .mainWrapper {
-    margin-top: 340px; 
-    // margin-top: 380px; without header
+    margin-top: 100px; 
     display: flex;
     justify-content: center;
+}
+
+.mainWrapper__index {
+    margin-top: 340px; 
+    // margin-top: 380px; without header
 }
 
 .border {
@@ -136,10 +90,20 @@ header {
         font-weight: 400;
         text-transform: uppercase;
         font-family: 'Lilitaone';
-        color: #814b06;
+        color: $title-color;
         font-size: 2em;
         letter-spacing: 2px;
     }
+}
+
+.text {
+    font-weight: 700;
+    font-family: Acme;
+    text-align: center;
+    line-height: 1.3em;
+    letter-spacing: .05em;
+    font-size: 21px;
+    margin: auto;
 }
 
 .playButtonWrapper {

@@ -1,0 +1,52 @@
+@import 'config';
+@import 'variables';
+
+header {
+    padding: 10px 0;
+    background-color: rgba($color: #182272, $alpha: 0.5);
+  
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .companyLogo {
+          width: 140px;
+      }
+  
+      ul {
+          li {
+              a {
+                  font-family: 'Acme';
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  text-decoration: none;
+                
+                  margin-right: 30px;
+                
+                  &:hover {
+                    color: #4af931;
+                    cursor: pointer;
+                  }
+              }
+          }
+      }
+  
+      &.horizontalMenu {
+          height: 60px;
+  
+          .companyLogo {
+              width: 200px;
+          }
+  
+          ul {
+              li {
+                  a {
+                      font-size: 24px;
+                  }
+              }
+          }
+      }
+    }
+  }

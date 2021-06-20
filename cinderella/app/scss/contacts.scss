@@ -1,0 +1,53 @@
+@import 'config';
+@import 'variables';
+
+.contacts {
+    .customerSupport {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 100px 0px;
+
+        .infoWrapper {
+            flex: 0 0 460px;
+
+            & > .text {
+                padding: 0 50px;
+                color: $title-color;
+            }
+        }
+    }
+
+    .emails {
+        background-color: $bg-second;
+        padding: 80px 130px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+
+        .mail {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 1 40%;
+
+            & > .title {
+                display: flex;
+                justify-content: flex-start;
+                flex: 1 1 100%;
+
+                & > h2 {
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+
+            a {
+                color: $title-color;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+        }
+    }
+}
