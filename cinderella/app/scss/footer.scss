@@ -1,0 +1,63 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 125px 40px;
+
+    & > div {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        &:first-child {
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            height: 115px;
+            width: auto;
+            margin-right: 30px;
+        }
+
+        .socialsList {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin: 0px;
+    
+                img {
+                    height: 80px;
+                }
+            }
+        }
+
+        & > a {
+            display: flex;
+
+            .buttonWrapper {
+                img {
+                    height: 75px;
+                    width: auto;
+                }
+            }                        
+        }
+    }
+
+    .mouse {
+        width: 30%;
+        position: absolute;
+        left: -200px;
+        top: -15px;
+        z-index: 10;
+        }
+}

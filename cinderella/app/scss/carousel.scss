@@ -1,0 +1,62 @@
+.carouselWrapper {
+    position: relative;
+    padding: 20px 125px;
+    margin-top: 30px;
+    background-color: #fbf2df;
+    overflow: hidden;
+
+    .carouselItem {
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0 10px;
+            margin: auto;
+            border-radius: 30px;
+        }
+    }
+        
+    .carousel-button {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+        height: 70px;
+        width: 70px;
+    }
+        
+    .carousel-prev {
+        left: 30px;
+        top: 50%;
+        margin-top: -35px;
+        background-image: url('../img/dest/gallery/left_arrow.png');
+    }
+        
+    .carousel-next {
+        background-image: url('../img/dest/gallery/right_arrow.png');
+        top: 50%;
+        margin-top: -35px;
+        right: 30px;
+    }
+
+    .bigButton {
+        width: 140px;
+        height: 140px;
+        margin-top: -70px;
+    }
+
+    .carousel-next.bigButton {
+        right: 60px;
+    }
+
+    .carousel-prev.bigButton {
+        left: 60px;
+    }
+}
+
+.mobileCarouselWrapper {
+    max-height: 585px;
+    padding: 20px 250px !important;
+}

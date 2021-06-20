@@ -14,7 +14,7 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const pump = require('pump');
 const babel = require('gulp-babel');
-
+const fileinclude = require('gulp-file-include');
 
 // Local Server
 gulp.task('browser-sync', function() {
@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() {
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(rename({ suffix: '.min', prefix : '' }))
+	.pipe(concat('main.min.css'))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('build/css'))
@@ -54,7 +54,16 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('html', function() {
-	return gulp.src('app/*.html')
+	return gulp.src([
+        'app/index.html',
+        'app/contacts.html',
+        '!header.html', // ignore
+        '!footer.html' // ignore
+    ])
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+    }))
 	.pipe(gulp.dest('build/'))
 	.pipe(browserSync.reload({ stream: true }))
 });

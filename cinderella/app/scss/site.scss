@@ -1,0 +1,26 @@
+.imgs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 25px;
+    // top: -380px; without header
+    z-index: -10;
+
+    .cinderella {
+        width: 280px;
+        margin-top: 60px;
+    }
+
+    .gameLogo {
+        width: 625px;
+        margin-top: 20px;
+        margin-right: -10px;
+        align-self: start;
+    }
+
+    .prince {
+        width: 270px;
+        margin-top: 30px;
+    }
+}

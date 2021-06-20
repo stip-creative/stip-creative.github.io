@@ -1,6 +1,5 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #333; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
@@ -34,20 +33,6 @@ $gutter: $grid-gutter-width;
 
 // GENERAL DOCUMENT STYLES
 
-::placeholder {
-	color: #666;
-}
-
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
-
-input, textarea {
-	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
-}
 
 body {
 	font-family: $roboto;

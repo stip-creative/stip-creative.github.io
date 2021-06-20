@@ -1,0 +1,17 @@
+.markets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .marketsList {
+        display: flex;
+        flex: 0 1 865px;
+        justify-content: space-between;
+        align-items: center;
+
+        .itemImg {
+            width: 260px;
+            cursor: pointer;
+        }
+    }
+}

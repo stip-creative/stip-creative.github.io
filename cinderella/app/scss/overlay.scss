@@ -1,0 +1,96 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+	opacity: 0;
+    transition: opacity 0.3s;
+
+    &.show {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .overlayBg {
+        background-color: #000;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .overlayCarouselWrapper {
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+
+        .overlayCarouselBtn {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            margin-top: -35px;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            background-color: #000;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 50px;
+
+            &.prev {
+                left: -100px;
+                background-image: url('../img/dest/overlayGallery/left.svg');
+            }
+
+            &.next {
+                right: -100px;
+                background-image: url('../img/dest/overlayGallery/right.svg');
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0 10px;
+            border-radius: 30px;
+        }
+
+        &.mobileWrapper {
+            max-width: 720px;
+
+            @media (orientation: landscape) {
+                img {
+                    height: 70vh;
+                    width: auto;
+                    margin: auto;
+                }
+            }
+
+            .overlayCarouselBtn {
+                width: 140px;
+                height: 140px;
+                margin-top: -70px;
+                background-size: 80px;
+                cursor: pointer;
+
+                &.prev {
+                    left: -200px;
+                }
+    
+                &.next {
+                    right: -200px;
+                }
+            }
+        }
+    }
+    
+}
