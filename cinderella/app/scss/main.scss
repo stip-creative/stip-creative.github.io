@@ -48,7 +48,8 @@ a {
 }
 
 .mainWrapper {
-    margin-top: 100px; 
+    margin-top: 100px;
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -56,6 +57,18 @@ a {
 .mainWrapper__index {
     margin-top: 340px; 
     // margin-top: 380px; without header
+}
+
+.headerWrapper {
+  position: absolute;
+  top: -36px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .border {
