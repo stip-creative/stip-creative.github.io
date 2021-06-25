@@ -1,0 +1,71 @@
+@import 'config';
+@import 'variables';
+
+.privacyPolicy {
+    padding: 0 10px;
+    margin: 50px 140px;
+    max-height: 845px;
+    overflow-y: scroll;
+    text-align: justify;
+    color: $title-color;
+
+    & > .title {
+        padding: 30px;
+
+        & > h2 {
+            font-family: Acme;
+            font-weight: 700;
+            line-height: 1.3em;
+            letter-spacing: .05em;
+            font-size: 21px;
+            text-align: center;
+            text-transform: none;
+        }
+    }
+
+    & > .text {
+        text-align: justify;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-left: 10px;
+
+        & > .text {
+          text-align: justify;
+        }
+      }
+    }
+
+    a {
+      color: $title-color;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: $shadow;
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #b9e91c; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #87dd16; 
+    }
+
+    ol {
+      list-style-type: upper-alpha; /* Заглавные буквы */
+     }
+}

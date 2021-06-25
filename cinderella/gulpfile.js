@@ -57,6 +57,10 @@ gulp.task('html', function() {
 	return gulp.src([
         'app/index.html',
         'app/contacts.html',
+        'app/privacy-policy.html',
+        '!privacy-policy-text.html',
+        'app/terms-of-use.html',
+        '!terms-of-use-text.html',
         '!header.html', // ignore
         '!footer.html' // ignore
     ])

@@ -1,0 +1,61 @@
+@import 'config';
+@import 'variables';
+
+.termsOfUse {
+    padding: 0 10px;
+    margin: 50px 140px;
+    max-height: 845px;
+    overflow-y: scroll;
+    text-align: justify;
+    color: $title-color;
+
+    ul {
+      font-weight: 400;
+      font-family: Acme;
+      text-align: justify;
+      line-height: 1.3em;
+      letter-spacing: .05em;
+      font-size: 21px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+
+      li {
+        flex: 1 1 100%;
+      }
+
+      ul {
+        margin-left: 10px;
+
+        ul {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    a {
+      color: $title-color;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: $shadow;
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #b9e91c; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #87dd16; 
+    }
+}
