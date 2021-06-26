@@ -11,10 +11,18 @@
 
         .infoWrapper {
             flex: 0 0 460px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
 
             & > .text {
                 padding: 0 50px;
                 color: $title-color;
+            }
+
+            .buttonWrapper {
+              margin-top: 35px;
             }
         }
     }
