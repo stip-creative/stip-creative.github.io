@@ -62,7 +62,8 @@ gulp.task('html', function() {
         'app/terms-of-use.html',
         '!terms-of-use-text.html',
         '!header.html', // ignore
-        '!footer.html' // ignore
+        '!footer.html', // ignore
+        '!footerWithButtons.html'
     ])
     .pipe(fileinclude({
         prefix: '@@',

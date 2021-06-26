@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: 25px;
-    // top: -380px; without header
+    top: -375px;
     z-index: -10;
 
     .cinderella {
@@ -23,4 +22,50 @@
         width: 270px;
         margin-top: 30px;
     }
+}
+
+.decoratesWrapper {
+  .gameFirst {
+    position: absolute;
+    top: -338px;
+    left: -545px;
+    opacity: 1;
+    transform: rotate(5deg) rotateY(0deg);
+  }
+
+  .gameSecond {
+    position: absolute;
+    top: -458px;
+    left: 698px;
+    transform: rotate(-359deg);
+  }
+
+  .owl {
+    position: absolute;
+    bottom: 340px;
+    left: 20px;
+  }
+
+  .spinningTop {
+    position: absolute;
+    top: 374px;
+    right: 92px;
+    z-index: 0;
+  }
+
+  .owl {
+    position: absolute;
+    bottom: 682px;
+    left: -72px;
+    opacity: 0.7;
+    transform: scale(.8);
+    z-index: 1;
+  }
+}
+
+.mouse {
+  position: absolute;
+  bottom: -250px;
+  left: -250px;
+  z-index: 15;
 }

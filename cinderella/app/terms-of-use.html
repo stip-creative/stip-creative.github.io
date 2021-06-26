@@ -19,15 +19,21 @@
 
 <body>
 	@@include('./header.html')
-	<div class="mainWrapper">
+	<div class="mainWrapper termsOfUse">
     <div class="headerWrapper">
       <img src="img/dest/terms_of_use_header.png" alt="header"> 
     </div>
 		<div class="border">
-            <div class="termsOfUse">
-                @@include('./terms-of-use-text.html')
-            </div>
-            @@include('./footer.html')
+      <div class="decoratesWrapper">
+        <img src="img/dest/game.png" alt="game" class="gameFirst" /> 
+        <img src="img/dest/game.png" alt="game" class="gameSecond" /> 
+        <img src="img/dest/owl.png" alt="game" class="owl" /> 
+        <img src="img/dest/spinning_top.png" alt="game" class="spinningTop" /> 
+        <div class="wrapper">
+            @@include('./terms-of-use-text.html')
+        </div>
+        @@include('./footer.html')
+      </div>
 		</div>
 	</div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

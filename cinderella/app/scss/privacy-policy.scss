@@ -2,6 +2,7 @@
 @import 'variables';
 
 .privacyPolicy {
+  .wrapper {
     padding: 0 10px;
     margin: 50px 140px;
     max-height: 845px;
@@ -68,4 +69,37 @@
     ol {
       list-style-type: upper-alpha; /* Заглавные буквы */
      }
+  }
+
+  .decoratesWrapper {
+    .gameFirst {
+      position: absolute;
+      top: -347px;
+      left: -511px;
+      opacity: 0.4;
+      transform: rotate(-62deg) rotateY(180deg);
+    }
+
+    .gameSecond {
+      position: absolute; 
+      top: -50px;
+      left: 1060px;
+      opacity: .4;
+      transform: rotateY(180deg) rotate(-310deg);
+    }
+
+    .owl {
+      position: absolute;
+      bottom: 340px;
+      left: 20px;
+      opacity: .4;
+    }
+
+    .spinningTop {
+      position: absolute;
+      top: 10px;
+      left: 830px;
+    }
+  }
 }
+

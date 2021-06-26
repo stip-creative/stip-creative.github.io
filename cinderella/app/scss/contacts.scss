@@ -2,6 +2,7 @@
 @import 'variables';
 
 .contacts {
+  .wrapper {
     .customerSupport {
         display: flex;
         justify-content: space-around;
@@ -50,4 +51,32 @@
             }
         }
     }
+  }
+
+  .decoratesWrapper {
+    .gameFirst {
+      position: absolute;
+      top: -416px;
+      left: -511px;
+      opacity: 0.4;
+      transform: rotate(-62deg) rotateY(180deg);
+    }
+
+    .gameSecond {
+      position: absolute;
+      top: -350px;
+      left: 923px;
+      opacity: .4;
+      transform: rotateY(180deg) rotate(-300deg) scale(0.8);
+    }
+
+    .owl {
+      position: absolute;
+      bottom: 110px;
+      left: -70px;
+      opacity: .4;
+      transform: scale(0.8);
+    }
+  }
 }
+
