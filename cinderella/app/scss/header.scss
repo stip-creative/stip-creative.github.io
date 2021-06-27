@@ -26,9 +26,13 @@ header {
                   margin-right: 30px;
                 
                   &:hover {
-                    color: #4af931;
+                    color: $active-link;
                     cursor: pointer;
                   }
+              }
+
+              .active {
+                color: $active-link;
               }
           }
       }
@@ -49,4 +53,4 @@ header {
           }
       }
     }
-  }
+}
