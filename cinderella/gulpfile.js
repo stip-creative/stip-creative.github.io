@@ -61,8 +61,13 @@ gulp.task('html', function() {
         '!privacy-policy-text.html',
         'app/terms-of-use.html',
         '!terms-of-use-text.html',
-        '!header.html', // ignore
-        '!footer.html', // ignore
+        '!welcome.html',
+        '!overlay.html',
+        '!carousel.html',
+        '!markets.html',
+        '!video.html',
+        '!header.html',
+        '!footer.html',
         '!footerWithButtons.html'
     ])
     .pipe(fileinclude({
